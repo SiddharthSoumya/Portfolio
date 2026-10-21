@@ -12,7 +12,7 @@ function ContactLink({ href, label, icon: Icon }) {
   ) : (
     <div className="contact-link contact-link--missing">
       <span className="contact-link__icon"><Icon size={18} aria-hidden="true" /></span>
-      <span>{label} <small>— add your URL in src/data/portfolio.js</small></span>
+      {/* <span>{label} <small>— add your URL in src/data/portfolio.js</small></span> */}
     </div>
   );
 }

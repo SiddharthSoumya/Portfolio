@@ -35,7 +35,7 @@ export default function Experience() {
           );
         })}
       </div>
-      <p className="content-note">Replace bracketed placeholders in <code>src/data/portfolio.js</code> with verified details.</p>
+      {/* <p className="content-note">Replace bracketed placeholders in <code>src/data/portfolio.js</code> with verified details.</p> */}
     </section>
   );
 }

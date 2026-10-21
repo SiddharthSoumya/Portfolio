@@ -17,18 +17,19 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script>
       (() => {
+        let savedTheme;
         try {
-          const savedTheme = localStorage.getItem("portfolio-theme");
-          const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-          document.documentElement.dataset.theme =
-            savedTheme === "light" || savedTheme === "dark"
-              ? savedTheme
-              : systemPrefersLight
-                ? "light"
-                : "dark";
+          savedTheme = localStorage.getItem("portfolio-theme");
         } catch {
-          document.documentElement.dataset.theme = "dark";
+          savedTheme = null;
         }
+        const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.dataset.theme =
+          savedTheme === "light" || savedTheme === "dark"
+            ? savedTheme
+            : systemPrefersLight
+              ? "light"
+              : "dark";
       })();
     </script>
     <title>Siddharth Soumya — Software Engineering Portfolio</title>

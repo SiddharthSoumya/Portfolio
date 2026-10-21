@@ -51,9 +51,9 @@ export default function Hero() {
               Resume PDF
             </a>
           ) : (
-            <Button className="hero__resume" variant="ghost" type="button" disabled title="Add public/resume.pdf and set resumePath in src/data/portfolio.js">
-              Resume PDF not added
-            </Button>
+            // <Button className="hero__resume" variant="ghost" type="button" disabled title="Add public/resume.pdf and set resumePath in src/data/portfolio.js">
+            //   Resume PDF not added
+            // </Button>
           )}
         </div>
         <div className="hero__socials">

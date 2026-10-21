@@ -27,10 +27,6 @@ export default function Skills() {
           </Reveal>
         ))}
       </div>
-      <p className="content-note">
-        Example skills are provided as editable starter content. Keep only tools you’ve actually used, and adjust the
-        list in <code>src/data/portfolio.js</code>.
-      </p>
     </section>
   );
 }

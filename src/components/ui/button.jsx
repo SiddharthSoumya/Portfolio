@@ -41,6 +41,7 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  ref,
   ...props
 }) {
   const Comp = asChild ? Slot.Root : "button";
@@ -50,6 +51,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
+      ref={ref}
       className={cn("button", buttonVariants({ variant, size, className }))}
       {...props}
     />

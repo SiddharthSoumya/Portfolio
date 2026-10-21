@@ -29,7 +29,7 @@ export default function Achievements() {
           <span className="empty-state__icon"><Award size={20} aria-hidden="true" /></span>
           <div>
             <h3>No verified milestones added yet.</h3>
-            <p>Add certifications, awards, contributions, or other verifiable achievements to <code>src/data/portfolio.js</code> when ready.</p>
+        
           </div>
         </div>
       )}

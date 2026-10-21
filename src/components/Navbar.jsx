@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Button } from "@/components/ui/button";
@@ -14,11 +14,15 @@ const links = [
 
 export default function Navbar({ theme, onThemeToggle }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
 
   useEffect(() => {
     if (!menuOpen) return undefined;
     function handleKeyDown(event) {
-      if (event.key === "Escape") setMenuOpen(false);
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
@@ -66,6 +70,7 @@ export default function Navbar({ theme, onThemeToggle }) {
           {theme === "dark" ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
         </Button>
         <Button
+          ref={menuButtonRef}
           className="nav__menu-button"
           variant="ghost"
           size="icon"
