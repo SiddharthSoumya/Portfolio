@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111411" />
+    <meta
+      name="description"
+      content="Siddharth Soumya — Computer Science student and software development intern exploring software engineering, infrastructure, and deployment."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Siddharth Soumya — Software Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="A portfolio of learning, software projects, and an interest in building reliable systems."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+          document.documentElement.dataset.theme =
+            savedTheme === "light" || savedTheme === "dark"
+              ? savedTheme
+              : systemPrefersLight
+                ? "light"
+                : "dark";
+        } catch {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <title>Siddharth Soumya — Software Engineering Portfolio</title>
+  </head>
+  <body>
+    <div id="root">
+      <main>
+        <h1>Siddharth Soumya</h1>
+        <p>Software engineering, learning in public.</p>
+      </main>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
