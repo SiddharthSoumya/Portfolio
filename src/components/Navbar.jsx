@@ -51,11 +51,7 @@ export default function Navbar({ theme, onThemeToggle }) {
           <a className="nav__resume" href={profile.resumePath} download>
             Resume
           </a>
-        ) : (
-          <span className="nav__resume nav__resume--unavailable" title="Add your resume PDF to enable this link">
-            Resume soon
-          </span>
-        )}
+        ) : null}
       </nav>
 
       <div className="nav__actions">

@@ -12,7 +12,7 @@ export default function Footer() {
         <a className="site-footer__name" href="#home">
           Siddharth Soumya
         </a>
-        <p>Learning by building, one iteration at a time.</p>
+        <p>Backend Developer Intern · Emerald Windows</p>
         <div className="site-footer__links" aria-label="Footer links">
           {profile.github && (
             <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile">

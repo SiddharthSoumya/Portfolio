@@ -24,10 +24,8 @@ function ProjectCard({ project, index }) {
             {project.technologies.map((technology) => <li key={technology}><Badge>{technology}</Badge></li>)}
           </ul>
           <div className="project-card__links">
-            {project.repository ? (
+            {project.repository && (
               <a href={project.repository} target="_blank" rel="noreferrer"><Code2 size={15} aria-hidden="true" /> Repository <ArrowUpRight size={13} aria-hidden="true" /></a>
-            ) : (
-              <span><Code2 size={15} aria-hidden="true" /> Repository URL not added</span>
             )}
             {project.demo && (
               <a href={project.demo} target="_blank" rel="noreferrer">Live demo <ArrowUpRight size={13} aria-hidden="true" /></a>
@@ -45,15 +43,18 @@ export default function Projects() {
       <Reveal>
         <div className="section-heading section-heading--row">
           <div>
-            <p className="eyebrow">03 / Selected work</p>
-            <h2 id="projects-title">Projects, with room for the details.</h2>
+            <p className="eyebrow">03 / Projects</p>
+            <h2 id="projects-title">Projects.</h2>
           </div>
-          <p className="section-heading__aside">Starter entries are clearly marked. Replace them with verified project information.</p>
         </div>
       </Reveal>
-      <div className="projects-grid">
-        {projects.map((project, index) => <ProjectCard key={project.name} project={project} index={index} />)}
-      </div>
+      {projects.length > 0 ? (
+        <div className="projects-grid">
+          {projects.map((project, index) => <ProjectCard key={project.name} project={project} index={index} />)}
+        </div>
+      ) : (
+        <p className="projects-empty">No public projects yet.</p>
+      )}
     </section>
   );
 }

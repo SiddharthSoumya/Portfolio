@@ -1,88 +1,120 @@
 export const profile = {
   name: "Siddharth Soumya",
   location: "India",
-  headline: "Building software with curiosity, care, and a systems mindset.",
   introduction:
-    "I’m a Computer Science student and software development intern learning how thoughtful software is designed, built, and delivered. I’m especially interested in backend engineering, infrastructure, and the work that makes applications dependable.",
+    "I’m a Computer Science student at Vellore Institute of Technology and a Reliance Foundation Scholar. At Emerald Windows, I work as a Backend Developer Intern with Java and Spring Boot.",
   email: "",
-  github: "",
-  linkedin: "",
+  github: "https://github.com/SiddharthSoumya",
+  linkedin: "https://www.linkedin.com/in/siddharthsoumya/",
   resumePath: "",
 };
 
 export const skillGroups = [
   {
     title: "Programming languages",
-    skills: ["JavaScript", "Java", "SQL"],
+    skills: ["Java", "JavaScript", "Python"],
   },
   {
-    title: "Frontend",
-    skills: ["React", "HTML", "CSS"],
+    title: "Backend development",
+    skills: ["Spring Boot", "Spring Framework", "Spring Security", "Hibernate", "FastAPI", "REST APIs"],
   },
   {
-    title: "Backend & data",
-    skills: ["Node.js", "REST APIs", "PostgreSQL", "MongoDB"],
+    title: "Databases",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "SQLite"],
   },
   {
-    title: "Tools & systems",
-    skills: ["Git", "GitHub", "Linux", "Docker", "Cloud fundamentals"],
+    title: "Tools & AI",
+    skills: ["Maven", "Git", "GitHub", "Linux", "Azure AI Foundry", "Retrieval-Augmented Generation"],
   },
 ];
 
-export const projects = [
-  {
-    name: "Formi",
-    category: "Form-building project",
-    description:
-      "A project entry for a form-building application. Add a verified summary of the problem, the implemented features, and your contribution before publishing.",
-    problem: "Problem statement to confirm.",
-    contribution: "Your role and implementation details to confirm.",
-    technologies: ["Add confirmed technologies"],
-    status: "Details to confirm",
-    repository: "",
-    demo: "",
-  },
-  {
-    name: "Expense management",
-    category: "Expense or billing application",
-    description:
-      "A project entry for an expense management or billing application. Replace this placeholder with the actual use case and what you built.",
-    problem: "Problem statement to confirm.",
-    contribution: "Your role and implementation details to confirm.",
-    technologies: ["Add confirmed technologies"],
-    status: "Details to confirm",
-    repository: "",
-    demo: "",
-  },
-  {
-    name: "Deployment notes",
-    category: "Infrastructure learning project",
-    description:
-      "A project entry for an infrastructure or deployment learning project. Describe the tools, setup, and lessons only after confirming them.",
-    problem: "Goal and constraints to confirm.",
-    contribution: "Your role and implementation details to confirm.",
-    technologies: ["Add confirmed technologies"],
-    status: "Details to confirm",
-    repository: "",
-    demo: "",
-  },
-];
+export const projects = [];
 
 export const experience = [
   {
     kind: "Experience",
-    title: "Software development intern",
-    organization: "[Add organization name]",
-    period: "[Add verified dates]",
-    description: "Add a concise, accurate description of your responsibilities and learning.",
+    title: "Backend Developer Intern",
+    organization: "Emerald Windows Pvt. Ltd.",
+    period: "Oct 2026 – Present",
+    detail: "Hybrid",
+  },
+  {
+    kind: "Scholarship",
+    title: "Reliance Foundation Scholar",
+    organization: "Reliance Foundation",
+    period: "Jan 2026 – Present",
+    detail: "India",
   },
   {
     kind: "Education",
-    title: "B.Sc. Computer Science",
-    organization: "[Add institution name]",
-    period: "[Add verified dates]",
-    description: "Add relevant coursework or context if you would like to share it.",
+    title: "Bachelor’s degree, Computer Science",
+    organization: "Vellore Institute of Technology",
+    period: "Jul 2025 – Jul 2028",
+    detail: "Grade: 9.68",
+  },
+  {
+    kind: "Education",
+    title: "PCM",
+    organization: "Divine Happy School",
+    period: "Apr 2022 – Apr 2024",
+    detail: "Grade: 91.4%",
+  },
+  {
+    kind: "Education",
+    title: "Matriculation",
+    organization: "Divine Happy School",
+    period: "Feb 2010 – Apr 2022",
+    detail: "Grade: 92.7%",
   },
 ];
 
-export const achievements = [];
+export const achievements = [
+  {
+    title: "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+    organization: "Microsoft",
+    period: "Issued Aug 2026 · Expires Aug 2027",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/SiddharthSoumya-9796/DDD4457A154A34D?sharingId",
+  },
+  {
+    title: "2nd Place, Codorra 2026",
+    organization: "Unstop",
+    period: "Jun 2026",
+    url: "https://unstop.com/certificate-preview/a1906d19-4c6a-46d7-85a0-eb763557ca7d",
+  },
+  {
+    title: "Spring Boot for Beginners",
+    organization: "Amigoscode",
+    period: "May 2026",
+    url: "https://amigoscode.com/certificates/5f655a05-79f4-49f8-8310-d65aded8fafa",
+  },
+  {
+    title: "JavaScript for Beginners",
+    organization: "Amigoscode",
+    period: "May 2026",
+    url: "https://amigoscode.com/certificates/4523a00e-9761-4dbb-b84d-c5b5c4829829",
+  },
+  {
+    title: "The GateKeeper Aptitude 1% Arena",
+    organization: "Unstop",
+    period: "Apr 2026",
+    url: "https://unstop.com/certificate-preview/9cd9ef1f-98b2-4788-8737-ee5e45e3ab05",
+  },
+  {
+    title: "Postman API Fundamentals Student Expert",
+    organization: "Postman",
+    period: "Issued Jan 2026",
+    url: "https://api.badgr.io/public/assertions/uxPq8sf7SM2bzp28eVEpAg",
+  },
+  {
+    title: "Cent Percent Attendance",
+    organization: "Vellore Institute of Technology",
+    period: "",
+    url: "https://drive.google.com/file/d/1hYYTA17Ct_fp9a9d4exmozvFMEVWQ2lI/view?usp=sharing",
+  },
+  {
+    title: "Deloitte Australia — Data Analytics Job Simulation",
+    organization: "Forage",
+    period: "Mar 2026",
+    url: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_697a59954fbf8c8be5ed6e2c_1774761361278_completion_certificate.pdf",
+  },
+];

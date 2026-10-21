@@ -1,17 +1,9 @@
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowDown, ArrowUpRight, BriefcaseBusiness, Code2 } from "lucide-react";
 import { profile } from "@/data/portfolio";
-import { Button } from "@/components/ui/button";
 
 function SocialLink({ href, label, children }) {
-  if (!href) {
-    return (
-      <span className="social-link social-link--placeholder" aria-label={`${label} URL not added yet`}>
-        {children}
-        <span>{label} link not added</span>
-      </span>
-    );
-  }
+  if (!href) return null;
   return (
     <a className="social-link" href={href} target="_blank" rel="noreferrer">
       {children}
@@ -34,9 +26,9 @@ export default function Hero() {
   return (
     <section className="hero section-shell" id="home" aria-labelledby="hero-title">
       <motion.div className="hero__content" {...entrance}>
-        <p className="eyebrow"><span className="status-dot" /> Computer Science student · Software development intern</p>
+        <p className="eyebrow"><span className="status-dot" /> Computer Science · Vellore Institute of Technology</p>
         <h1 id="hero-title">
-          Building software with <span>curiosity, care,</span> and a systems mindset.
+          Backend Developer <span>Intern</span> at Emerald Windows.
         </h1>
         <p className="hero__intro">{profile.introduction}</p>
         <div className="hero__actions">
@@ -46,14 +38,10 @@ export default function Hero() {
           <a className="button button--secondary" href="#contact">
             Contact me <ArrowUpRight size={16} aria-hidden="true" />
           </a>
-          {profile.resumePath ? (
+          {profile.resumePath && (
             <a className="button button--quiet" href={profile.resumePath} download>
               Resume PDF
             </a>
-          ) : (
-            // <Button className="hero__resume" variant="ghost" type="button" disabled title="Add public/resume.pdf and set resumePath in src/data/portfolio.js">
-            //   Resume PDF not added
-            // </Button>
           )}
         </div>
         <div className="hero__socials">
@@ -76,14 +64,13 @@ export default function Hero() {
         <div className="hero__image-frame">
           <img
             src="/profile-placeholder.svg"
-            alt="Illustrated placeholder portrait; replace with your profile photograph."
+            alt="Portrait of Siddharth Soumya."
             width="720"
             height="860"
             fetchPriority="high"
           />
           <div className="hero__image-note">
             <span>01 / INTRODUCTION</span>
-            <span>Replace with your portrait</span>
           </div>
         </div>
       </motion.div>

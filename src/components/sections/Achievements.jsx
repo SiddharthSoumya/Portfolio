@@ -8,8 +8,8 @@ export default function Achievements() {
     <section className="section-shell section" id="achievements" aria-labelledby="achievements-title">
       <Reveal>
         <div className="section-heading">
-          <p className="eyebrow">05 / Milestones</p>
-          <h2 id="achievements-title">Achievements & certifications.</h2>
+          <p className="eyebrow">05 / Credentials</p>
+          <h2 id="achievements-title">Certifications & achievements.</h2>
         </div>
       </Reveal>
       {achievements.length ? (
@@ -18,8 +18,11 @@ export default function Achievements() {
             <Card key={item.title}>
               <CardContent className="achievement-card">
                 <Award size={20} aria-hidden="true" />
-                <div><h3>{item.title}</h3><p>{item.description}</p></div>
-                {item.url && <a href={item.url} target="_blank" rel="noreferrer" aria-label={`Verify ${item.title}`}><ArrowUpRight size={16} /></a>}
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.organization}{item.period ? ` · ${item.period}` : ""}</p>
+                </div>
+                {item.url && <a href={item.url} target="_blank" rel="noreferrer" aria-label={`View ${item.title} credential`}><ArrowUpRight size={16} aria-hidden="true" /></a>}
               </CardContent>
             </Card>
           ))}
@@ -28,8 +31,7 @@ export default function Achievements() {
         <div className="empty-state">
           <span className="empty-state__icon"><Award size={20} aria-hidden="true" /></span>
           <div>
-            <h3>No verified milestones added yet.</h3>
-        
+            <h3>No achievements listed.</h3>
           </div>
         </div>
       )}

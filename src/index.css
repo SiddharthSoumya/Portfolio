@@ -202,11 +202,6 @@ img {
   color: var(--foreground);
 }
 
-.nav__resume--unavailable {
-  cursor: not-allowed;
-  opacity: 0.62;
-}
-
 .nav__actions {
   display: flex;
   align-items: center;
@@ -385,10 +380,6 @@ a.button:hover {
   margin-top: 2rem;
 }
 
-.hero__resume {
-  font-size: 0.8rem;
-}
-
 .hero__socials {
   display: flex;
   flex-wrap: wrap;
@@ -408,11 +399,6 @@ a.button:hover {
 
 a.social-link:hover {
   color: var(--foreground);
-}
-
-.social-link--placeholder {
-  cursor: default;
-  opacity: 0.7;
 }
 
 .hero__location {
@@ -551,30 +537,6 @@ main {
   line-height: 1.65;
 }
 
-.about__approach {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 4.5rem;
-}
-
-.approach-item {
-  height: 100%;
-  padding: 1.4rem 1.35rem 1.2rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.approach-item__icon {
-  display: inline-grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--accent);
-}
-
-.approach-item h3,
 .skill-group h3,
 .timeline-item h3,
 .achievement-card h3 {
@@ -584,7 +546,6 @@ main {
   letter-spacing: -0.025em;
 }
 
-.approach-item p,
 .timeline-item__main > p:last-child,
 .achievement-card p {
   margin: 0;
@@ -760,8 +721,7 @@ code {
   margin-top: 1.35rem;
 }
 
-.project-card__links a,
-.project-card__links span {
+.project-card__links a {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -935,10 +895,6 @@ a.contact-link:hover {
   font-size: 0.68rem;
 }
 
-.contact-link--missing {
-  color: var(--muted);
-}
-
 .site-footer {
   padding: 0 max(1.25rem, calc((100vw - 1160px) / 2));
 }
@@ -1099,20 +1055,6 @@ a.contact-link:hover {
   .about__body {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .about__approach {
-    grid-template-columns: 1fr;
-    gap: 0.65rem;
-    margin-top: 3rem;
-  }
-
-  .approach-item {
-    padding-right: 0;
-  }
-
-  .approach-item h3 {
-    margin-top: 0.8rem;
   }
 
   .contact-section {

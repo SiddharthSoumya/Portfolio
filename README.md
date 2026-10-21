@@ -2,7 +2,7 @@
 
 A static, single-page portfolio starter built with React, JavaScript, Vite, Tailwind CSS v4, shadcn/ui source components, Motion for React, and Lucide icons. It has no backend, environment variables, analytics, or third-party image dependencies.
 
-The supplied profile details are limited to the facts provided: a B.Sc. Computer Science student in India and a software development intern. Bracketed fields, empty links, skills, and project entries are editable starter content—not verified claims. Review them before publishing.
+The portfolio profile reflects the information supplied: a Computer Science student at Vellore Institute of Technology, Reliance Foundation Scholar, and Backend Developer Intern at Emerald Windows. Public profile links are configured. No project descriptions, email address, or resume were supplied, so those are not presented as completed content.
 
 ## Run locally
 
@@ -25,21 +25,19 @@ npm run preview
 
 ## Personalize before publishing
 
-1. **Profile photograph:** replace `public/profile-placeholder.svg` with your own optimized image, or add `public/profile.jpg` and update the image path and alternative text in [`src/components/sections/Hero.jsx`](./src/components/sections/Hero.jsx). Keep the existing portrait-shaped frame in mind.
-2. **Contact and social profiles:** fill `email`, `github`, and `linkedin` in [`src/data/portfolio.js`](./src/data/portfolio.js). Blank values deliberately render as unavailable text rather than broken or invented links.
-3. **Resume:** add your real PDF as `public/resume.pdf`, then set `resumePath: "/resume.pdf"` in `src/data/portfolio.js`. Until both steps are complete, the resume controls are visibly unavailable.
-4. **Projects:** confirm each project’s description, problem, contribution, technologies, status, repository, and demo in `src/data/portfolio.js`. The three initial entries are prompts, not claims about completed functionality.
-5. **Experience and education:** replace bracketed organization, institution, and date fields with verified information. Add only responsibilities you can substantiate.
-6. **Skills:** remove technologies you have not used. The initial groups are suggestions, not proficiency ratings.
-7. **Achievements:** add verified items to the `achievements` array. The section is intentionally complete and presentable while the array is empty.
-8. **Metadata:** update the title and description in `index.html` if your preferred public-facing wording changes. Add a canonical URL and absolute Open Graph image only after you know the production domain.
+1. **Profile photograph:** the Hero section uses `public/profile-placeholder.svg`. Replace it with your preferred image and update its alternative text in [`src/components/sections/Hero.jsx`](./src/components/sections/Hero.jsx).
+2. **Email:** add an address to `email` in [`src/data/portfolio.js`](./src/data/portfolio.js) if you want it published. No email address is displayed until you add one.
+3. **Resume:** add your PDF as `public/resume.pdf`, then set `resumePath: "/resume.pdf"` in `src/data/portfolio.js`. Resume links appear after the local file is in place.
+4. **Projects:** add project entries to the `projects` array in `src/data/portfolio.js` when you have descriptions and links you want to publish.
+5. **Skills and achievements:** update the arrays in `src/data/portfolio.js` as your experience changes.
+6. **Metadata:** update the title and description in `index.html` if your preferred public-facing wording changes. Add a canonical URL and absolute Open Graph image only after you know the production domain.
 
 ## Project map
 
 ```text
 public/
   favicon.svg                 Local site icon
-  profile-placeholder.svg     Replace with a real portrait before publishing
+  profile-placeholder.svg     Profile portrait image
 src/
   components/
     sections/                 One component per portfolio section

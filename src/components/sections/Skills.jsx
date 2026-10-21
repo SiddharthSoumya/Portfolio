@@ -1,4 +1,3 @@
-import { Code2 } from "lucide-react";
 import { skillGroups } from "@/data/portfolio";
 import Reveal from "@/components/Reveal";
 import { Badge } from "@/components/ui/badge";
@@ -7,12 +6,9 @@ export default function Skills() {
   return (
     <section className="section-shell section section--subtle" id="skills" aria-labelledby="skills-title">
       <Reveal>
-        <div className="section-heading section-heading--row">
-          <div>
-            <p className="eyebrow">02 / Tools & technologies</p>
-            <h2 id="skills-title">A working set, still growing.</h2>
-          </div>
-          <p className="section-heading__aside"><Code2 size={17} aria-hidden="true" /> An editable list, not a proficiency ranking.</p>
+        <div className="section-heading">
+          <p className="eyebrow">02 / Skills</p>
+          <h2 id="skills-title">Skills & technologies.</h2>
         </div>
       </Reveal>
       <div className="skills-grid">
