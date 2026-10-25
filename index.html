@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#111411" />
+    <meta name="theme-color" content="#0d1117" />
     <meta
       name="description"
-      content="Siddharth Soumya is a Computer Science student at VIT, Reliance Foundation Scholar, and Backend Developer Intern at Emerald Windows."
+      content="Siddharth Soumya — backend developer building reliable applications with Java, Spring Boot, PostgreSQL, and a forward deployment mindset. VIT Vellore, Class of 2028."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Siddharth Soumya — Backend Developer" />
     <meta
       property="og:description"
-      content="Computer Science student at VIT, Reliance Foundation Scholar, and Backend Developer Intern at Emerald Windows."
+      content="Real problems. Reliable backends. Explore Java and Spring Boot projects, durable state, offline-first systems, and full-stack delivery."
     />
+    <meta property="og:url" content="https://siddharthsoumya.vercel.app" />
+    <meta
+      property="og:image"
+      content="https://siddharthsoumya.vercel.app/social-preview.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://siddharthsoumya.vercel.app" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script>
       (() => {
@@ -23,13 +30,8 @@
         } catch {
           savedTheme = null;
         }
-        const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
         document.documentElement.dataset.theme =
-          savedTheme === "light" || savedTheme === "dark"
-            ? savedTheme
-            : systemPrefersLight
-              ? "light"
-              : "dark";
+          savedTheme === "light" || savedTheme === "dark" ? savedTheme : "dark";
       })();
     </script>
     <title>Siddharth Soumya — Backend Developer</title>
@@ -38,7 +40,16 @@
     <div id="root">
       <main>
         <h1>Siddharth Soumya</h1>
-        <p>Computer Science student at VIT and Backend Developer Intern at Emerald Windows.</p>
+        <p>
+          Backend developer building database-backed applications with Java,
+          Spring Boot, and a forward deployment mindset.
+        </p>
+        <p>
+          B.Sc. Computer Science, Data Science, VIT Vellore — Class of 2028.
+        </p>
+        <a href="https://github.com/SiddharthSoumya"
+          >Explore projects on GitHub</a
+        >
       </main>
     </div>
     <script type="module" src="/src/main.jsx"></script>
